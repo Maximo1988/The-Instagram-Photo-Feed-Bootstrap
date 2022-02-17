@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0516fb680f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Oswald:wght@200;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand ml-5 pl-5 logo_instagram">
+            <i class="fab fa-instagram"></i>
+            <i>Instagram</i></a>
+            <form class="form-inline">
+
+
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                Create a new feed
+            </button>
+        
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <textarea class="form-control" style="min-width: 100%"></textarea>
+                        </div>
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-outline-dark"><i class="fas fa-camera fa-lg"></i></button>
+                            <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i></button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="dropdown mr-5">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log Out</a> 
+                </div>
+              </div>
+            
+
+        </a>
+    </nav>
+    
+
+    
+    <div class="container-fluid d-flex justify-content-center pt-5">            
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square fa-md"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    
+
+    <div class="row d-flex justify-content-center no-gutters">
+        <div class="col-xl-4">
+            <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/086/860/original.webp">
+        </div>
+        <div class="col-xl-4">
+            <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/088/539/original.webp">
+        </div>
+        <div class="col-xl-4">
+            <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/000/003/original.webp">
+        </div>
+
+        <div class="row d-flex justify-content-center no-gutters">
+            <div class="col-xl-4">
+                <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/000/087/original.webp">
+            </div>
+            <div class="col-xl-4">
+                <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/088/688/original.webp">
+            </div>
+            <div class="col-xl-4">
+                <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/000/308/original.webp">
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center no-gutters">
+            <div class="col-xl-4">
+                <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/087/676/original.webp">
+            </div>
+            <div class="col-xl-4">
+                <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/027/185/original.webp">
+            </div>
+            <div class="col-xl-4">
+                <img class="img-fluid" src="https://assets.epuzzle.info/puzzle/000/103/original.webp">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+        <div class="container-md bg-light rounded border mt-5">
+            <div class="row pb-3 pt-3">
+                <div class="col">My First Photo</div>
+                <div class="col text-right text-secondary">12/14</div>
+            </div>
+            <div class="row"><img src="https://i0.wp.com/blog.vivaaerobus.com/wp-content/uploads/2020/04/paisajes-de-mexico.jpg?resize=1050%2C590&ssl=1" width="800px"></div>
+            <div class="row pl-2 pt-2"><strong>23 likes</strong><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the text ever.</div>
+            <div class="row pb-2 pt-4">
+                <div class="col text-secondary"><i class="far fa-heart"></i> Comment...</div>
+                <div class="col text-right text-secondary"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+        </div>               
+       
+
+        <div class="container-md bg-light rounded border mt-5">
+            <div class="row pb-3 pt-3">
+                <div class="col">My First Photo</div>
+                <div class="col text-right text-secondary">12/14</div>
+            </div>
+            <div class="row"><img src="https://www.paisajesimagenes.com/wp-content/uploads/paisajes.jpg" width="800px"></div>
+            <div class="row pl-2 pt-2"><strong>23 likes</strong><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the text ever.</div>
+            <div class="row pb-2 pt-4">
+                <div class="col text-secondary"><i class="far fa-heart"></i> Comment...</div>
+                <div class="col text-right text-secondary"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+        </div>               
+      
+
+        <div class="container-md bg-light rounded border mt-5">
+            <div class="row pb-3 pt-3">
+                <div class="col">My First Photo</div>
+                <div class="col text-right text-secondary">12/14</div>
+            </div>
+            <div class="row"><img src="https://101lugaresincreibles.com/wp-content/uploads/2009/05/paisajes-hermosos.jpg" width="800px"></div>
+            <div class="row pl-2 pt-2"><strong>23 likes</strong><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the text ever.</div>
+            <div class="row pb-2 pt-4">
+                <div class="col text-secondary"><i class="far fa-heart"></i> Comment...</div>
+                <div class="col text-right text-secondary"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+        </div>              
+        
+
+        <div class="container-md bg-light rounded border mt-5">
+            <div class="row pb-3 pt-3">
+                <div class="col">My First Photo</div>
+                <div class="col text-right text-secondary">12/14</div>
+            </div>
+            <div class="row"><img src="https://www.ifam.es/colombia/wp-content/uploads/sites/13/2015/08/imagenes-de-paisajes-hermosos-4.jpg" width="800px"></div>
+            <div class="row pl-2 pt-2"><strong>23 likes</strong><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the text ever.</div>
+            <div class="row pb-2 pt-4">
+                <div class="col text-secondary"><i class="far fa-heart"></i> Comment...</div>
+                <div class="col text-right text-secondary"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+        </div>
+
+            
+        </div>
+
+</body>
+
+</html>
